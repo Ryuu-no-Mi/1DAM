@@ -1,0 +1,118 @@
+@import url(./normalize.css);
+@import url(./IES_LasFuentezuelas/home.css);
+:root {
+  --black: #08053a;
+  --purple: #706a92;
+  --whithe: #fefefe;
+  --gray: #304153;
+  --blue: #144272;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+html {
+  width: 100%;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: auto;
+  border: 1px solid rgb(224, 124, 124);
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  /* flex-direction: row;  Se aplica  por defecto*/
+  justify-content: space-around;
+  align-items: baseline;
+  width: 90%;
+  background-color: rgb(99, 99, 237);
+}
+.header__avatar {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.header__h1 {
+  background-color: aquamarine;
+}
+.row {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aside {
+  width: 25%;
+  background-color: rgb(236, 103, 103);
+  text-align: center;
+}
+.aside__section1,
+.aside__section2 {
+  background: #d3f589;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.section1__h3 {
+  width: 70%;
+  background-color: #456;
+}
+.section1__p {
+  width: 70%;
+  background-color: #876;
+}
+
+.section2 {
+  background-color: #876;
+}
+
+.section2__h3 {
+  background-color: #456;
+}
+.section2__ul {
+  text-align: initial;
+  background: #d3f589;
+}
+.section2__li {
+  background-color: aquamarine;
+  margin: 5px 0;
+}
+
+.main {
+  width: 65%;
+  background: #e36de7;
+}
+
+.main__article {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 50px;
+
+  width: 70%;
+  /* Ir cambiando  hasta que quede alineador con el H1 */
+}
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0 30px;
+  width: 90%;
+  /* row-gap: 0px; */
+  /* column-gap: 30px; */
+  justify-content: space-between;
+  background-color: #706a92;
+}
