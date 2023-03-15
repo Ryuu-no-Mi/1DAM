@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/IES_LasFuentezuelas/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../../imgs/Header_IES_LasFuentezuelas/Escudo_IES_LasFuentezuelas-removebg-preview2.png"
+      type="image/x-icon"
+    />
+    <title>IES LasFuentezuelas - Contacta</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <picture class="header__logo">
+          <a href="./home.html" class="header__a"
+            ><img
+              class="header__img"
+              src="../../imgs/Header_IES_LasFuentezuelas/Escudo_IES_LasFuentezuelas-removebg-preview2.png"
+              alt="Logo IES Fuentezuelas"
+          /></a>
+        </picture>
+        <h1 class="header__h1">IES Las Fuentazuelas</h1>
+
+        <nav class="header__nav nav">
+          <ul class="nav__ul">
+            <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
+            <li class="nav__li">
+              <a href="./enseñanzas.html" class="nav__a">Enseñanzas</a>
+            </li>
+            <li class="nav__li">
+              <a href="./noticias.html" class="nav__a">Noticias</a>
+            </li>
+            <li class="nav__li">
+              <a href="./contacta.html" class="nav__a">Contacta</a>
+            </li>
+          </ul>
+          <img
+            class="btn__nav"
+            src="../../imgs/menu-hamburger.svg"
+            alt="menu-hamburher"
+          />
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="main__contact">
+        <div class="main__section contact">
+          <h2 class="contact__h2">Contacta con nosotros</h2>
+          <p class="contact__p">
+            Para contactar con nuestro centro, usa la información de contacto
+            que mostramos dada o rellena el formulario de la parte inferior para
+            mandar directamente un correo a nuestra bandeja.
+          </p>
+          <ul class="contact__ul">
+            <li class="contact__li">
+              <img
+                class="contact__img"
+                src="../../imgs/Main_IES_LasFuentezuelas/contact/location-dot-solid.svg"
+                alt="icon"
+              />
+              Av. Arjona, 5, 23006 Jaén
+            </li>
+            <li class="contact__li">
+              <img
+                class="contact__img"
+                src="../../imgs/Main_IES_LasFuentezuelas/contact/phone-solid.svg"
+                alt="icon"
+              />953366905
+            </li>
+            <li class="contact__li">
+              <img
+                class="contact__img"
+                src="../../imgs/Main_IES_LasFuentezuelas/contact/globe-solid.svg"
+                alt="icon"
+              />http://www.ieslasfuentezuelas.com/
+            </li>
+            <li class="contact__li">
+              <img
+                class="contact__img"
+                src="../../imgs/Main_IES_LasFuentezuelas/contact/paper-plane-solid.svg"
+                alt="icon"
+              />ieslasfuentezuelas@g.educaand.es
+            </li>
+          </ul>
+          <div class="contact__iframe">
+            <iframe
+              class="contact__maps"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12613.497683789477!2d-3.8046061!3d37.7812642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd71774e45867%3A0x99df1e0032930534!2sIES%20Las%20Fuentezuelas!5e0!3m2!1ses!2ses!4v1678454799450!5m2!1ses!2ses"
+              width="600"
+              height="450"
+              style="border: 1"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="main__section form">
+          <h2 class="form__h2">Contacto</h2>
+          <form class="form__formulario">
+            <label class="form__label" for="nombre">Nombre:</label>
+            <input
+              placeholder="Name"
+              class="form__input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+            /><br />
+
+            <label class="form__label" for="apellidos">Apellidos:</label>
+            <input
+              placeholder="surnames"
+              class="form__input"
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              required
+            /><br />
+
+            <label class="form__label" for="email">Email:</label>
+            <input
+              placeholder="Email"
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            /><br />
+
+            <label class="form__label" for="telefono">Teléfono:</label>
+            <input
+              placeholder="phone"
+              class="form__input"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              pattern="[0-9]{10}"
+              required
+            /><br />
+
+            <label class="form__label" for="mensaje">Mensaje:</label>
+            <textarea
+              placeholder="write things here"
+              id="mensaje"
+              name="mensaje"
+              cols="32"
+              rows="15"
+              required
+            ></textarea
+            ><br />
+
+            <input class="form__input form__btn" type="submit" value="Enviar" />
+          </form>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__credits credits">
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/ministerio_educacionlogo.png"
+              alt="credito"
+              srcset=""
+          /></picture>
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/Junta_Andalucia.png"
+              alt="credito"
+              srcset=""
+          /></picture>
+          <h5 class="credits__h5">IES Las Fuentezuelas</h5>
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/AENOR.png"
+              alt="credito"
+              srcset=""
+          /></picture>
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/certificado_CISCO6.png"
+              alt="credito"
+              srcset=""
+          /></picture>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

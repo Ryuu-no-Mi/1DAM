@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/IES_LasFuentezuelas/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../../imgs/Header_IES_LasFuentezuelas/Escudo_IES_LasFuentezuelas-removebg-preview2.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/627932a241.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>IES Las Fuentezuelas</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <picture class="header__logo">
+          <a href="./home.html" class="header__a"
+            ><img
+              class="header__img"
+              src="../../imgs/Header_IES_LasFuentezuelas/Escudo_IES_LasFuentezuelas-removebg-preview2.png"
+              alt="Logo IES Fuentezuelas"
+          /></a>
+        </picture>
+        <h1 class="header__h1">IES Las Fuentazuelas</h1>
+
+        <nav class="header__nav nav">
+          <ul class="nav__ul">
+            <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
+            <li class="nav__li">
+              <a href="./enseñanzas.html" class="nav__a">Enseñanzas</a>
+            </li>
+            <li class="nav__li">
+              <a href="./noticias.html" class="nav__a">Noticias</a>
+            </li>
+            <li class="nav__li">
+              <a href="./contacta.html" class="nav__a">Contacta</a>
+            </li>
+          </ul>
+          <button class="btn" onclick="menu();">
+            <img
+              class="btn__nav"
+              src="../../imgs/menu-hamburger.svg"
+              alt="menu-hamburher"
+            />
+          </button>
+        </nav>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <picture class="bg--picture">
+          <!--<img
+              class="bg--img"
+              src="../../imgs/Slider_IES_LasFuentezuelas/Entrada_IES_LASFUENTEZUELAS.jp"
+              alt="Edificio Principal" -->
+        </picture>
+        <div class="main__container">
+          <!-- SEPARAR AQUIIIIIIIIIIIIIIII -->
+          <div class="main__content">
+            <section class="section__main info">
+              <div class="info__box slider">
+                <section class="slider__section">
+                  <picture class="slider__picture">
+                    <img
+                      class="slider_img slider_img--show"
+                      data-id="1"
+                      src="../../imgs/Slider_IES_LasFuentezuelas/students2.jpg"
+                      alt="Slider Image"
+                    />
+                    <img
+                      class="slider_img"
+                      data-id="2"
+                      src="../../imgs/Slider_IES_LasFuentezuelas/goGreen.jpg"
+                      alt="Slider Image"
+                    />
+
+                    <img
+                      class="slider_img"
+                      data-id="3"
+                      src="../../imgs/Slider_IES_LasFuentezuelas/Entrada2_IES_LASFUENTEZUELAS.jpg"
+                      alt="Slider Image"
+                    />
+                    <img
+                      class="slider_img"
+                      data-id="4"
+                      src="../../imgs/Slider_IES_LasFuentezuelas/Entrada_IES_LASFUENTEZUELAS.jpg"
+                      alt="Slider Image"
+                    />
+                  </picture>
+                </section>
+              </div>
+
+              <div class="info__description description">
+                <h2 class="description__h2">Sobre el centro</h2>
+                <!-- Fuera o dentro del .description -->
+                <!-- Encerrar contenido en un div .slider -->
+                <div class="description__content slider__section">
+                  <img
+                    class="description__arrow slider_arrow"
+                    id="before"
+                    src="../../imgs/Slider_IES_LasFuentezuelas/circle-chevron-left-solid.svg"
+                  />
+                  <section class="slider_body slider_body--show" data-id="1">
+                    <p class="description__p">
+                      El IES Las Fuentezuelas es uno de los centros emblemáticos
+                      de nuestra ciudad, entre otras muchas razones por su
+                      antigüedad como Centro en la capital, inicialmente como
+                      Centro politécnico y posteriormente como Centro de
+                      Educación Secundaria Obligatoria y Formación Profesional.
+                      Con el paso de los años se ha ido adaptando a las nuevas
+                      exigencias.
+                    </p>
+                  </section>
+
+                  <section class="slider_body" data-id="2">
+                    <p class="description__p">
+                      La oferta educativa de Formación Profesional del IES Las
+                      Fuentezuelas es muy amplia. Se imparten Ciclos formativos
+                      de Grado Medio y de Grado Superior de las familias
+                      profesionales de Administración y Gestión, Electricidad y
+                      Electrónica, Instalación y Mantenimiento, Informática y
+                      Comunicaciones y Actividades Físicas y Deportivas.
+                    </p>
+                  </section>
+                  <section class="slider_body" data-id="3">
+                    <p class="description__p">
+                      Además, contamos con dos enseñanzas de Formación
+                      Profesional Básica en Servicios Administrativos y con los
+                      Cursos de Especialización de Digitalización del
+                      Mantenimiento Industrial y Ciberseguridad
+                    </p>
+                  </section>
+                  <section class="slider_body" data-id="4">
+                    <p class="description__p">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nostrum deserunt commodi nobis aut ad molestias qui,
+                      dolore alias beatae, amet sequi sapiente? Asperiores
+                      necessitatibus totam voluptatum? Veritatis cupiditate
+                      beatae sint.
+                    </p>
+                  </section>
+                  <img
+                    class="description__arrow slider_arrow"
+                    id="next"
+                    src="../../imgs/Slider_IES_LasFuentezuelas/circle-chevron-right-solid.svg"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="section__main gallery">
+              <div class="gallery__box">
+                <div class="box">
+                  <picture class="box__picture"
+                    ><a
+                      class="box__picture--a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="box__picture--img"
+                        src="../../imgs/Main_IES_LasFuentezuelas/jefatura2.png"
+                        alt="Jefatura" /></a
+                  ></picture>
+                  <p class="box__p">Jefatura</p>
+                </div>
+                <div class="box">
+                  <picture class="box__picture"
+                    ><a
+                      class="box__picture--a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="box__picture--img"
+                        src="../../imgs/Main_IES_LasFuentezuelas/proyectos2.png"
+                        alt="Proyectos" /></a
+                  ></picture>
+                  <p class="box__p">Proyectos</p>
+                </div>
+                <div class="box">
+                  <picture class="box__picture"
+                    ><a
+                      class="box__picture--a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="box__picture--img"
+                        src="../../imgs/Main_IES_LasFuentezuelas/orientacion2.png"
+                        alt="orientacion" /></a
+                  ></picture>
+                  <p class="box__p">Orientacion</p>
+                </div>
+                <div class="box">
+                  <picture class="box__picture"
+                    ><a
+                      class="box__picture--a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="box__picture--img"
+                        src="../../imgs/Main_IES_LasFuentezuelas/virtual.png"
+                        alt="Visita Virtual" /></a
+                  ></picture>
+                  <p class="box__p">Visita Virtual</p>
+                </div>
+                <div class="box">
+                  <picture class="box__picture"
+                    ><a
+                      class="box__picture--a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="box__picture--img"
+                        src="../../imgs/Main_IES_LasFuentezuelas/fct2.png"
+                        alt="FP Dual" /></a
+                  ></picture>
+                  <p class="box__p">FP Dual</p>
+                </div>
+                <div class="box">
+                  <picture class="box__picture"
+                    ><a
+                      class="box__picture--a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="box__picture--img"
+                        src="../../imgs/Main_IES_LasFuentezuelas/departamentos2.png"
+                        alt="Departamentos" /></a
+                  ></picture>
+                  <p class="box__p">Departamentos</p>
+                </div>
+              </div>
+              <!-- Gallery -->
+              <div class="gallery__box2 box2">
+                <picture class="box__picture"
+                  ><img
+                    class="box2__img"
+                    src="../../imgs/Main_IES_LasFuentezuelas/ateca-logo.png"
+                    alt="ATECA"
+                /></picture>
+                <picture class="box__picture"
+                  ><img
+                    class="box2__img"
+                    src="../../imgs/Main_IES_LasFuentezuelas/emprendeaula.png"
+                    alt="Aula de Emprendimiento"
+                /></picture>
+                <picture class="box__picture"
+                  ><img
+                    class="box2__img"
+                    src="../../imgs/Main_IES_LasFuentezuelas/erasmusplus.png"
+                    alt="Erasmus +"
+                /></picture>
+                <picture class="box__picture"
+                  ><img
+                    class="box2__img"
+                    src="../../imgs/Main_IES_LasFuentezuelas/acredita2021.png"
+                    alt=" Acredita 2021"
+                /></picture>
+              </div>
+            </section>
+          </div>
+          <!-- ASIDEEEEEEEEEEEEEEEE -->
+          <aside class="aside__main aside">
+            <section class="section__aside">
+              <h3 class="aside__h3">Últimas noticias</h3>
+              <div class="aside__news news">
+                <picture class="news__picture">
+                  <img
+                    class="news__img"
+                    src="../../imgs/Aside__IES_LasFuentezuelas/8M.webp"
+                    alt="Noticias"
+                  />
+                  <h4 class="news__h4">D&iacute;a Internacional de la Mujer</h4>
+                  <p class="news__p">
+                    El 8 de marzo se celebra el D&iacute;a Internacional de la
+                    Mujer, un d&iacute;a dedicado a la lucha por la igualdad.
+                  </p>
+                  <a class="news__a" href="./noticias.html">Leer +</a>
+                </picture>
+              </div>
+              <div class="aside__news news">
+                <picture class="news__picture">
+                  <img
+                    class="news__img"
+                    src="../../imgs/Aside__IES_LasFuentezuelas/RecepcionEramus.jfif"
+                    alt="Noticias"
+                  />
+                  <h4 class="news__h4">Recepción de Estudiantes Eramus</h4>
+                  <p class="news__p">
+                    Acogida de grupo Erasmus procedentes del Liceo
+                    Lingü&iacute;stico Ninni Cassarà de Palermo en el
+                    Ayuntamiento.
+                  </p>
+                  <a class="news__a" href="./noticias.html">Leer +</a>
+                </picture>
+              </div>
+              <div class="aside__news news">
+                <picture class="news__picture">
+                  <img
+                    class="news__img"
+                    src="../../imgs/Aside__IES_LasFuentezuelas/Andalucia-28F-2023.jpg"
+                    alt="Noticias"
+                  />
+                  <h4 class="news__h4">D&iacute;a de Andaluc&iacute;a</h4>
+                  <p class="news__p">
+                    El pasado viernes celebramos el D&iacute;a de
+                    Andaluc&iacute;a. Gracias por la colaboración desinteresada
+                    del profesorado y los alumn@s de 1º Bachillerato.
+                  </p>
+                  <a class="news__a" href="./noticias.html">Leer +</a>
+                </picture>
+              </div>
+            </section>
+            <!-- LIIIIIINKSSSSSSSSS -->
+            <section class="section__aside links">
+              <h3 class="aside__h3">Enlaces de Inter&eacute;s</h3>
+              <div class="social-links">
+                <picture class="links__picture"
+                  ><a
+                    class="links__a"
+                    href="https://seneca.juntadeandalucia.es/seneca/jsp/portalpasen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="links__img"
+                      src="../../imgs/Aside__IES_LasFuentezuelas/ipasen.png"
+                      alt="Red social" /></a
+                ></picture>
+                <picture class="links__picture"
+                  ><a
+                    class="links__a"
+                    href="https://educacionadistancia.juntadeandalucia.es/centros/jaen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="links__img"
+                      src="../../imgs/Aside__IES_LasFuentezuelas/icon-moodle.png"
+                      alt="Red social" /></a
+                ></picture>
+                <picture class="links__picture"
+                  ><a
+                    class="links__a"
+                    href="https://www.google.com/maps/place/IES+Las+Fuentezuelas/@37.7812642,-3.8046061,15z/data=!4m2!3m1!1s0x0:0x99df1e0032930534?sa=X&ved=2ahUKEwij5LSD8dj9AhXT7rsIHX8VCC0Q_BJ6BAhfEAg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="links__img"
+                      src="../../imgs/Aside__IES_LasFuentezuelas/map-location-dot-solid.svg"
+                      alt="Red social" /></a
+                ></picture>
+                <picture class="links__picture"
+                  ><a
+                    class="links__a"
+                    href="https://twitter.com/lasfuentezuelas?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="links__img"
+                      src="../../imgs/Mi_CV/gorjeo.png"
+                      alt="Red social" /></a
+                ></picture>
+                <picture class="links__picture"
+                  ><a
+                    class="links__a"
+                    href="https://www.facebook.com/profile.php?id=100075457946240"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="links__img"
+                      src="../../imgs/Aside__IES_LasFuentezuelas/facebook.svg"
+                      alt="Red social" /></a
+                ></picture>
+                <picture class="links__picture"
+                  ><a
+                    class="links__a"
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="links__img"
+                      src="../../imgs/Aside__IES_LasFuentezuelas/youtube.svg"
+                      alt="Red social" /></a
+                ></picture>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__credits credits">
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/ministerio_educacionlogo.png"
+              alt="credito"
+          /></picture>
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/Junta_Andalucia.png"
+              alt="credito"
+          /></picture>
+          <h5 class="credits__h5">IES Las Fuentezuelas</h5>
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/AENOR.png"
+              alt="credito"
+          /></picture>
+          <picture class="credits__picture"
+            ><img
+              class="credits__img"
+              src="../../imgs/Footer_IES_LasFuentezuelas/certificado_CISCO6.png"
+              alt="credito"
+          /></picture>
+        </div>
+      </footer>
+    </div>
+    <script src="../../script/slider.js"></script>
+    <script src="../../script/menu_hamburger.js"></script>
+  </body>
+</html>

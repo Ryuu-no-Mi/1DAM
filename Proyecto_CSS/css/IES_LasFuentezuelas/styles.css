@@ -1,0 +1,28 @@
+@import url(../normalize.css);
+@import url(./header.css);
+@import url(../Mediaquerys/Media-Header.css);
+@import url(./footer.css);
+@import url(../Mediaquerys/Media-Footer.css);
+@import url(./home.css);
+@import url(../Mediaquerys/Media-Home.css);
+@import url(./enseñanzas.css);
+@import url(../Mediaquerys/Media-Enseñanza.css);
+@import url(./contact.css);
+@import url(../Mediaquerys/Media-Contact.css);
+@import url(./noticias.css);
+@import url(../Mediaquerys/Media-Noticias.css);
+
+@font-face {
+  font-family: roboto;
+  src: url(../../fonts/Roboto.ttf);
+}
+
+@font-face {
+  font-family: roboto-italic;
+  src: url(../../fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(../../fonts/Roboto-Bold.ttf);
+}

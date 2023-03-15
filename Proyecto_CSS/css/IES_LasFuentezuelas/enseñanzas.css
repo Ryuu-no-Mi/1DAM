@@ -1,0 +1,150 @@
+.family__h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  margin: 30px 0 60px 0;
+}
+
+.family__gallery {
+  display: grid;
+  /* grid-auto-rows: minmax(min(100%, 200px), 1fr); */
+  /* grid-auto-rows: 200px; */
+  grid-auto-rows: 12.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  grid-auto-flow: dense;
+  align-items: center;
+  margin: 1.25rem 0;
+  padding: 2.5rem 0;
+}
+
+.family__card {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.family__card:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: all 0.8s ease-in;
+}
+
+.family__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(58, 58, 58, 0.7);
+  /* width: 100px; */
+  width: 6.25rem;
+  /* height: 100px; */
+  height: 6.25rem;
+  border-radius: 100%;
+  transition: background-color 0.8s ease-in 0.1s;
+}
+
+.family__picture:hover {
+  background-color: rgba(200, 200, 200, 0.663);
+}
+
+.family__img {
+  /* height: 50px; */
+  height: 3.125rem;
+}
+
+.family__p {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  background-color: whitesmoke;
+  width: 14.6875rem;
+  margin: 1.25rem 0.3125rem;
+  padding: 0.2188rem;
+  border: 0.0625rem solid black;
+}
+
+.main__img {
+  width: 100%;
+  height: 100%;
+  margin: 3.125rem 0;
+  padding: 1.25rem 0;
+}
+
+.separator__picture {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: scale-down;
+}
+.separator__img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  margin: 0 auto;
+}
+
+.offers__card {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin: 1.25rem auto;
+}
+
+.offers__h3 {
+  font-size: 1.375rem;
+  text-align: center;
+  margin: 0 auto 0.9375rem;
+}
+
+.offers__ul {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 15px auto;
+  padding: 0;
+}
+.offers__li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 0 5px 0;
+  margin: 0 0 10px 0;
+  font-size: 15px;
+}
+
+.offers__img--li {
+  width: 24px;
+  margin: 0 10px 0 0;
+}
+
+.profesorado__offer {
+  width: 60%;
+  margin: 50px auto;
+}
+
+.table__h3 {
+  font-size: 2.3rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+.offer__table {
+  text-align: center;
+  margin: auto;
+}
+
+.table__th {
+  font-size: 30px;
+}
+
+.table__tr {
+  font-size: 20px;
+  height: 120px;
+}
+.table__td {
+  width: 300px;
+  height: 100px;
+}

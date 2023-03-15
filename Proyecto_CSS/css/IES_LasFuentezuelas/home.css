@@ -1,0 +1,340 @@
+:root {
+  --bg-color: rgb(13, 13, 13);
+  --gray: rgba(26, 26, 26, 0.8);
+  --white: rgb(255, 255, 255);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-italic;
+  src: url(../../fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(../../fonts/Roboto-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, "Times New Roman", Times, serif;
+}
+
+html {
+  width: 100%;
+}
+
+.main {
+  background-color: var(--white);
+}
+
+.bg--picture {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-image: url(../../imgs/Slider_IES_LasFuentezuelas/Entrada_IES_LASFUENTEZUELAS.jpg);
+}
+/* .bg--img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+} */
+
+.main__container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.section__main {
+  width: 100%;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+.info__box {
+  /* display: flex;
+  flex-flow: column nowrap; */
+  /* Cambiar margenes a gusto */
+  margin: 50px 0px;
+}
+
+.slider__section {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+}
+.slider_img {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease-in;
+}
+.slider_img--show {
+  display: grid;
+  opacity: 1;
+  width: 95%;
+  margin: 0 auto;
+  pointer-events: unset;
+}
+
+.slider_body {
+  display: grid;
+  grid-column: 2/3;
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+  grid-row: 1/2;
+  /* grid-row-start: 1;
+  grid-row-end: 2; */
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--grey);
+  align-items: center;
+  transition: opacity 1s ease-in;
+}
+
+.slider_body--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.slider_arrow {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+}
+
+.info__picture {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.slider__arrow {
+  width: 40px;
+}
+.slider__img {
+  width: 100%;
+}
+
+.info__description {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.description__h2 {
+  font-size: 2.5rem;
+}
+
+.description__content {
+  display: grid;
+  grid-template-columns: 10% 70% 10%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.description__arrow {
+  width: 30px;
+  margin: 5px;
+}
+.description__p {
+  font-size: 1.2rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.gallery__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  /* grid-template-rows: repeat(minmax(18rem, 1fr)); */
+  grid-template-rows: repeat(minmax(min(100%, 18rem), 1fr));
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.box {
+  background-color: rgba(180, 180, 180, 0.9);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  /* Temporal */
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
+  width: 12.5rem;
+  margin: 5px 0;
+}
+
+.box:hover {
+  transform: scale(1.12);
+  opacity: 0.8;
+  transition: 1s ease-out;
+}
+
+.box__picture--img:hover,
+.box2__img:hover {
+  transform: scale3d(1.3, 1.3, 1);
+  transition: 1s ease-out;
+}
+
+.box__p {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.gallery__box2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.box2__img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.aside {
+  width: 100%;
+}
+
+.section__aside {
+  /* background-color: brown; */
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  row-gap: 5px;
+  margin-bottom: 30px;
+}
+
+.aside__news {
+  background-color: rgba(198, 196, 196, 0.9);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%), 0 4px 25px 0 rgb(0 0 0 / 12%),
+    0 8px 10px -5px rgb(0 0 0 / 20%);
+  border-radius: 7px;
+  width: 65%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+.aside__news:hover {
+  transform: scale3d(1.1, 1.1, 1);
+  transition: 0.5s ease;
+  opacity: 0.9;
+}
+
+.aside__h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.news__picture {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.news__img {
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.news__img:hover {
+  transform: scale3d(1.01, 1.01, 1);
+  transition: 1.5s ease-out;
+}
+
+.news__h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.news__p {
+  margin: 10px 0;
+  padding: 0 10px;
+
+  text-align: center;
+}
+
+.news__a {
+  color: rgb(43, 91, 250);
+  margin: 10px 0;
+}
+
+.new__a:visited {
+  color: rgb(160, 69, 69);
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* background-color: aquamarine; */
+}
+
+.social-links {
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  column-gap: 0.8rem;
+  grid-auto-rows: repeat(minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 3rem), 1fr));
+  grid-auto-flow: dense;
+  margin: 10px;
+}
+
+.links__picture {
+  width: 100%;
+}
+
+.links__img {
+  width: 100%;
+  display: block;
+  height: auto;
+  filter: invert(0%);
+}
+
+.links__img:hover {
+  transform: scale3d(1.2, 1.2, 1);
+  transition: 0.6s ease-out;
+  filter: invert(30%);
+  opacity: 0.65;
+}
