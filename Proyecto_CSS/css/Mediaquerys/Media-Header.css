@@ -1,0 +1,165 @@
+@media only screen and (max-width: 1120px) {
+  html .header__logo {
+    width: 10%;
+  }
+
+  html .header__h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  html .header__logo {
+    width: 11%;
+  }
+
+  html .header__h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html .header__logo {
+    width: 13%;
+  }
+  html .header__h1 {
+    font-size: 1.8rem;
+    padding: 2px 0;
+  }
+  html .nav__a {
+    font-size: 1.45rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  html .header__logo {
+    width: 13%;
+  }
+
+  html .header__h1 {
+    font-size: 1.7rem;
+  }
+  html .nav__a {
+    font-size: 1.37rem;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  html .header__h1 {
+    font-size: 1.6rem;
+  }
+  html .nav__a {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  html .header__h1 {
+    font-size: 1.5rem;
+  }
+  html .nav {
+    width: 60%;
+  }
+
+  html .nav__ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  html .nav__a {
+    font-size: 1.3rem;
+  }
+
+  html .header__logo {
+    width: 15%;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  html .header__h1 {
+    font-size: 1.3rem;
+  }
+
+  html .nav__a {
+    font-size: 1.25rem;
+  }
+
+  html .header__logo {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  html .header__h1 {
+    font-size: 1.3rem;
+  }
+
+  html .nav__a {
+    font-size: 1.22rem;
+  }
+
+  html .header__logo {
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  html .header {
+    justify-content: space-between;
+  }
+
+  html .header__h1 {
+    font-size: 1.3rem;
+  }
+
+  html .nav__li {
+    display: none;
+  }
+
+  html .header__logo {
+    width: 14%;
+  }
+
+  html .nav {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  }
+
+  html .btn__nav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html .header__logo {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  html .header__logo {
+    width: 16%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html .header__logo {
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html .header__h1 {
+    font-size: 1.2rem;
+  }
+  html .header__logo {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html .header__logo {
+    width: 19%;
+  }
+}
