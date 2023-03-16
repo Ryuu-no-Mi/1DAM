@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/IES_LasFuentezuelas/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/627932a241.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="shortcut icon"
       href="../../imgs/Header_IES_LasFuentezuelas/Escudo_IES_LasFuentezuelas-removebg-preview2.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../../css/IES_LasFuentezuelas/styles.css" />
     <title>IES LasFuentezuelas - Contacta</title>
   </head>
   <body>
@@ -25,9 +28,18 @@
         </picture>
         <h1 class="header__h1">IES Las Fuentazuelas</h1>
 
-        <nav class="header__nav nav">
+        <button class="open-menu" id="open">
+          <i class="menu-hamburger fa-solid fa-bars"></i>
+        </button>
+        <!-- NAAAAV -->
+        <nav class="header__nav nav" id="nav">
+          <button class="close-menu" id="close">
+            <i class="close-menu-hamburger fa-sharp fa-solid fa-xmark"></i>
+          </button>
           <ul class="nav__ul">
-            <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
+            <li class="nav__li">
+              <a href="./home.html" class="nav__a">Inicio</a>
+            </li>
             <li class="nav__li">
               <a href="./enseñanzas.html" class="nav__a">Enseñanzas</a>
             </li>
@@ -35,14 +47,9 @@
               <a href="./noticias.html" class="nav__a">Noticias</a>
             </li>
             <li class="nav__li">
-              <a href="./contacta.html" class="nav__a">Contacta</a>
+              <a href="#" class="nav__a">Contacta</a>
             </li>
           </ul>
-          <img
-            class="btn__nav"
-            src="../../imgs/menu-hamburger.svg"
-            alt="menu-hamburher"
-          />
         </nav>
       </header>
       <!-- Main -->
@@ -89,8 +96,6 @@
             <iframe
               class="contact__maps"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12613.497683789477!2d-3.8046061!3d37.7812642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd71774e45867%3A0x99df1e0032930534!2sIES%20Las%20Fuentezuelas!5e0!3m2!1ses!2ses!4v1678454799450!5m2!1ses!2ses"
-              width="600"
-              height="450"
               style="border: 1"
               allowfullscreen=""
               loading="lazy"
@@ -144,6 +149,7 @@
 
             <label class="form__label" for="mensaje">Mensaje:</label>
             <textarea
+              class="form__textarea"
               placeholder="write things here"
               id="mensaje"
               name="mensaje"
@@ -192,5 +198,7 @@
         </div>
       </footer>
     </div>
+    <script src="../../script/slider.js"></script>
+    <script src="../../script/menu_hamburger.js"></script>
   </body>
 </html>

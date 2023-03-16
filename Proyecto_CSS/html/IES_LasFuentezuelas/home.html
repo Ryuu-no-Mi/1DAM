@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/IES_LasFuentezuelas/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/627932a241.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="shortcut icon"
       href="../../imgs/Header_IES_LasFuentezuelas/Escudo_IES_LasFuentezuelas-removebg-preview2.png"
       type="image/x-icon"
     />
-    <script
-      src="https://kit.fontawesome.com/627932a241.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="../../css/IES_LasFuentezuelas/styles.css" />
     <title>IES Las Fuentezuelas</title>
   </head>
   <body>
@@ -29,7 +29,14 @@
         </picture>
         <h1 class="header__h1">IES Las Fuentazuelas</h1>
 
-        <nav class="header__nav nav">
+        <button class="open-menu" id="open">
+          <i class="menu-hamburger fa-solid fa-bars"></i>
+        </button>
+        <!-- NAAAAV -->
+        <nav class="header__nav nav" id="nav">
+          <button class="close-menu" id="close">
+            <i class="close-menu-hamburger fa-sharp fa-solid fa-xmark"></i>
+          </button>
           <ul class="nav__ul">
             <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
             <li class="nav__li">
@@ -42,13 +49,6 @@
               <a href="./contacta.html" class="nav__a">Contacta</a>
             </li>
           </ul>
-          <button class="btn" onclick="menu();">
-            <img
-              class="btn__nav"
-              src="../../imgs/menu-hamburger.svg"
-              alt="menu-hamburher"
-            />
-          </button>
         </nav>
       </header>
       <!-- MAIN -->

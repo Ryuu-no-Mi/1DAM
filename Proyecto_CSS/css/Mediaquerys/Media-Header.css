@@ -113,22 +113,57 @@
     font-size: 1.3rem;
   }
 
-  html .nav__li {
-    display: none;
+  html .open-menu,
+  html .close-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
   }
 
-  html .header__logo {
-    width: 14%;
+  html .menu-hamburger,
+  html .close-menu-hamburger {
+    font-size: 30px;
+    color: #ececec;
   }
 
   html .nav {
     display: flex;
-    justify-content: center;
-    width: 20%;
+    flex-flow: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 1.5rem;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    width: 50%;
   }
 
-  html .btn__nav {
-    display: block;
+  html .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  html .nav__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    gap: 1rem;
+  }
+
+  html .nav__a {
+    color: #ececec;
+    text-decoration: none;
+    font-size: 23.5px;
+  }
+
+  html .header__logo {
+    width: 14%;
   }
 }
 
@@ -140,26 +175,35 @@
 
 @media only screen and (max-width: 530px) {
   html .header__logo {
-    width: 16%;
+    width: 17%;
   }
 }
 @media only screen and (max-width: 450px) {
   html .header__logo {
-    width: 17%;
+    width: 19%;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  html .header__logo {
+    width: 21%;
+  }
   html .header__h1 {
     font-size: 1.2rem;
   }
+  html .nav {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
   html .header__logo {
-    width: 18%;
+    width: 30%;
   }
 }
 
 @media only screen and (max-width: 300px) {
   html .header__logo {
-    width: 19%;
+    width: 35%;
   }
 }

@@ -1,8 +1,11 @@
-function menu() {
-  const button = document.querySelector(".btn");
-  const nav = document.querySelector(".nav__li");
+const nav = document.querySelector("#nav");
+const openMenu = document.querySelector("#open");
+const closeMenu = document.querySelector("#close");
 
-  button.addEventListener("onclick", () => {
-    nav.classList.toggle("activo");
-  });
-}
+openMenu.addEventListener("click", () => {
+  nav.classList.add("visible");
+});
+
+closeMenu.addEventListener("click", () => {
+  nav.classList.remove("visible");
+});

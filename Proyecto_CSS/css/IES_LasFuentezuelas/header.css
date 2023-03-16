@@ -40,6 +40,14 @@
   width: 65%;
   height: 100%;
 }
+
+.open-menu {
+  display: none;
+}
+.close-menu {
+  display: none;
+}
+
 .nav__ul {
   display: flex;
   flex-flow: row wrap;
@@ -58,13 +66,4 @@
   margin: 0 10px;
   color: white;
   text-decoration: 5px underline rgba(128, 128, 128, 0.699);
-}
-.btn {
-  background-color: #ffffff00;
-}
-
-.btn__nav {
-  display: none;
-  width: 25px;
-  filter: invert(100%);
 }

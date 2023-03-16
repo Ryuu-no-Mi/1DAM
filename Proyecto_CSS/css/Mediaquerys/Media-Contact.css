@@ -1,0 +1,124 @@
+@media only screen and (max-width: 1800px) {
+  html .main__contact {
+    grid-template-columns: repeat(auto-fill, minmax(min(90%, 600px), 1fr));
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  html .main__contact {
+    grid-column: 50% 50%;
+  }
+  html .contact__iframe {
+    margin: 100px auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html .contact__h2,
+  html .form__h2 {
+    font-size: 2.5rem;
+  }
+
+  html .contact__img {
+    width: 30px;
+  }
+
+  html .contact__li {
+    font-size: 17px;
+  }
+
+  html .form__formulario {
+    padding: 50px;
+    margin-bottom: 20px;
+  }
+
+  html .form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html .contact__maps {
+    /* width: 500px;
+    height: 350px; */
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html .contact__h2,
+  html .form__h2 {
+    font-size: 2rem;
+  }
+
+  html .contact__li {
+    font-size: 1.1rem;
+  }
+
+  html .contact__img {
+    width: 1.3rem;
+  }
+
+  html .contact__ul {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  html .form__label {
+    font-size: 1.3rem;
+  }
+
+  html .form__input {
+    height: 2rem;
+  }
+
+  html .form__btn {
+    height: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html .form {
+    width: 85%;
+  }
+  html .contact__h2,
+  html .form__h2 {
+    font-size: 1.9rem;
+  }
+
+  html .contact__li {
+    font-size: 1rem;
+  }
+
+  html .contact__img {
+    width: 1.25rem;
+  }
+
+  html .form__label {
+    font-size: 1.25rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html .form__input {
+    height: 1.75rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html .form__textarea {
+    height: 14rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html .form__btn {
+    height: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
